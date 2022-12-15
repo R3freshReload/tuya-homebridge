@@ -117,7 +117,7 @@ class TuyaPlatform {
     // Construct new accessory
     let deviceAccessory;
     switch (deviceType) {
-      case 'kj':
+      /*case 'kj':
         deviceAccessory = new AirPurifierAccessory(this, homebridgeAccessory, device);
         this.accessories.set(uuid, deviceAccessory.homebridgeAccessory);
         this.deviceAccessories.set(uuid, deviceAccessory);
@@ -183,7 +183,7 @@ class TuyaPlatform {
         deviceAccessory = new LeakSensorAccessory(this, homebridgeAccessory, device);
         this.accessories.set(uuid, deviceAccessory.homebridgeAccessory);
         this.deviceAccessories.set(uuid, deviceAccessory);
-        break;
+        break;*/
       case 'wsdcg':
         deviceAccessory = new TemperatureAndHumiditySensorAccessory(this, homebridgeAccessory, device);
         this.accessories.set(uuid, deviceAccessory.homebridgeAccessory);
